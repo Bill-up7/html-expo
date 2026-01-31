@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Girls Who Code</title>
+    <link rel="stylesheet" href="GirlsWhoCodeWebPage.css">
+
+    <style>
+        /* Hide all sections by default */
+        .page {
+            display: none;
+            padding: 20px;
+        }
+
+        /* Show home page by default */
+        #home {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#" onclick="showPage('home')">Home</a></li>
+            <li><a href="#" onclick="showPage('about')">About</a></li>
+            <li><a href="#" onclick="showPage('year')">2023–2024</a></li>
+            <li><a href="#" onclick="showPage('robots')">Robots</a></li>
+            <li><a href="#" onclick="showPage('girlsgetit')">Girls Get IT</a></li>
+            <li><a href="#" onclick="showPage('html')">HTML</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home -->
+    <section id="home" class="page">
+        <header>
+            <img src="https://scitechinstitute.org/wp-content/uploads/2020/04/Girls-Who-Code-001.jpg"
+                 height="140" width="220" alt="Girls Who Code Logo">
+            <img src="https://pbs.twimg.com/media/FV1DdBQVsAEAv1o.jpg"
+                 height="140" width="220" alt="Girls Who Code Event">
+            <h2>Girls Who Code at Red Mountain</h2>
+        </header>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="page">
+        <p>
+            Girls Who Code is a nonprofit organization founded in 2012 by Reshma Saujani. The organization
+            was created to close the gender gap in the technology industry by encouraging and supporting
+            girls and nonbinary students in computer science. Girls Who Code provides programs, clubs, and
+            resources that teach coding skills while also building confidence, leadership, and
+            problem-solving abilities. Its mission is to inspire students to pursue careers in technology
+            and to create a more inclusive and diverse future in the tech world.
+        </p>
+
+        <p>To learn more about what Girls Who Code does visit the link below:</p>
+        <a href="https://girlswhocode.com/about-us">Learn more</a>
+    </section>
+
+    <!-- School Year -->
+    <section id="year" class="page">
+        <h4>This School Year 2023–2024</h4>
+        <ul>
+            <li>We worked with robots</li>
+            <li>Went to Girls Get IT</li>
+            <li>Studied HTML code</li>
+        </ul>
+    </section>
+
+    <!-- Robots -->
+    <section id="robots" class="page">
+        <h5>Working with robots:</h5>
+        <p>
+            During the first semester, we worked with robots that used a touch-and-go mechanism. The robots
+            connected to a tablet via Bluetooth, and the tablet used magnets to represent binary code
+            (zeros and ones). Although these robots were designed for K–5 students, we presented them to
+            teachers so they could use them to teach their students how to code.
+            <a href="https://www.totalphase.com/blog/2023/04/what-is-binary-code-and-how-does-it-work/">
+                Learn more about binary code here!!
+            </a>
+        </p>
+
+        <p>
+            We also learned about FIRST LEGO League, an international robotics program where students
+            build, design, and program LEGO robots to complete challenges. FIRST LEGO League focuses on
+            teamwork, problem-solving, and creativity while helping students learn coding and engineering
+            skills through hands-on experience.
+            <a href="https://www.firstlegoleague.org/" target="_blank">
+                Learn more about FIRST LEGO League
+            </a>
+        </p>
+    </section>
+
+    <!-- Girls Get IT -->
+    <section id="girlsgetit" class="page">
+        <h5>Girls Get IT</h5>
+        <p>
+            Girls Get IT was in November at Scottsdale Community College. Girls Get IT is an event where
+            you listen to a guest speaker and split into different stations to learn about computer
+            science. You also get to talk to women who are in the industry and ask them questions about
+            their careers or what the industry is like.
+        </p>
+        <p>
+            <a href="https://www.scottsdalecc.edu/community/girls-get-it">
+                Click for more about Girls Get IT
+            </a>
+        </p>
+    </section>
+
+    <!-- HTML -->
+    <section id="html" class="page">
+        <h5>Learning HTML</h5>
+        <p>
+            When starting to learn HTML, our sponsor Mrs. Wooton took a poll between all the girls. We
+            decided to learn HTML using Codecademy. We went through the lessons together at first, then
+            continued at our own pace.
+        </p>
+        <p>
+            <a href="https://www.codecademy.com/login">Link to Codecademy</a>
+        </p>
+    </section>
+
+    <!-- JavaScript -->
+    <script>
+        function showPage(pageId) {
+            const pages = document.querySelectorAll('.page');
+            pages.forEach(page => page.style.display = 'none');
+
+            document.getElementById(pageId).style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>

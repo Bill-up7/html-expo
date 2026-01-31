@@ -1,0 +1,38 @@
+/* Page styling */
+body {
+    font-family: Arial, sans-serif;
+    color: black;
+}
+
+/* Header styles */
+.header1 {
+    font-size: xx-large;
+    color: teal;
+}
+
+.header2 {
+    font-size: x-large;
+    color: purple;
+}
+
+/* Headings */
+h1 {
+    font-size: x-large;
+    color: purple;
+}
+
+h2 {
+    font-size: x-large;
+    color: teal;
+}
+
+/* Paragraphs */
+p {
+    text-indent: 30px;
+    font-size: medium;
+    color: black;
+}
+header {
+    background-color: #f0f8f8;
+    padding: 15px;
+}
